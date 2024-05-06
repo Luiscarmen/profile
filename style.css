@@ -1,0 +1,106 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1d1d1d;
+  font-size: 30px;
+  line-height: 1.6;
+  text-align: center;
+
+  /* Créer classe des éléments texte que ke souhaite mettre en page ex. centrer, justifier... */
+}
+
+/* louis carment et * contact me  */
+h1, h2{
+  color: rgb(50, 50, 50);
+  font-family:"Bebas Neue";
+  text-align: center;
+}
+
+/* After 8 years as a buyer in a construction company where I used to buy equipments such as trucks,
+ /* forklifts or aerial work platforms, I want to retrain and learn to code. */
+p {
+  text-align: justify;
+  padding: 25px;
+}
+
+/* mise en page photo */
+#photo-circle {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+/* bloc de présentation */
+.card {
+  background: white;
+  border: 10px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* mise en page de mon lien */
+#wagon-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  border-color: #2d2d2e;
+  border-style:solid;
+  border-radius: 5px;
+}
+
+.list-horizontal:has(#wagon-link:hover) .fa-solid {
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+/* fleche et lien vers site du wagon */
+.list-horizontal > li {
+  list-style: none;
+  display : inline-block;
+  padding: 20px;
+  font-size: 40px;
+}
+
+#wagon-link:hover {
+  transition: 1s;
+  background-color: #dfe0e0;
+}
+
+/* Sert à aligner horizontalement ma liste de logos */
+.list-inline > li {
+  display : inline-block;
+  padding: 20px;
+  font-size: 40px;
+}
+
+
+.list-inline {
+  list-style: none;
+  padding: 0px;
+}
+
+/* couleur logos */
+.fa-brands{
+  color :#b8babd;
+}
+
+/* changement avec souris */
+.fa-brands:hover {
+  color: #836FFF;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+
+  }
+  body {
+    background-color: blue;
+  }
+}
